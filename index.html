@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro Store - Votre Expert en Outils Informatiques</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" data-aos="fade-right">
+                <i class="fas fa-laptop-code me-2 text-warning"></i>
+                <span class="gradient-text">TechPro</span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Avis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-btn" href="#" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="hero-title mb-4">
+                        Votre <span class="gradient-text">Partenaire</span> 
+                        <br>Technologique de Confiance
+                    </h1>
+                    <p class="hero-subtitle mb-4">
+                        Découvrez notre gamme complète d'équipements informatiques de qualité professionnelle. 
+                        Des derniers smartphones aux ordinateurs haute performance, nous avons tout ce qu'il vous faut.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-lg me-3 pulse-btn">
+                            <i class="fas fa-shopping-bag me-2"></i>Explorer nos Produits
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Nous Contacter
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats mt-5" data-aos="fade-up" data-aos-delay="400">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-number">10K+</div>
+                                <div class="stat-label">Clients Satisfaits</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Produits</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-number">5★</div>
+                                <div class="stat-label">Note Moyenne</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="hero-image-container">
+                        <div class="floating-card floating-card-1">
+                            <i class="fas fa-laptop"></i>
+                            <span>Ordinateurs</span>
+                        </div>
+                        <div class="floating-card floating-card-2">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Smartphones</span>
+                        </div>
+                        <div class="floating-card floating-card-3">
+                            <i class="fas fa-headphones"></i>
+                            <span>Accessoires</span>
+                        </div>
+                        <div class="hero-main-image">
+                            <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tech Setup" class="img-fluid rounded-4 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Nos <span class="gradient-text">Produits</span></h2>
+                <p class="section-subtitle">Une sélection premium d'équipements informatiques</p>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="row mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="category-filters text-center">
+                        <button class="btn btn-category active" data-category="all">Tous</button>
+                        <button class="btn btn-category" data-category="computers">Ordinateurs</button>
+                        <button class="btn btn-category" data-category="phones">Téléphones</button>
+                        <button class="btn btn-category" data-category="accessories">Accessoires</button>
+                        <button class="btn btn-category" data-category="storage">Stockage</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="row" id="productGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/3182832/pexels-photo-3182832.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Notre Équipe" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="section-title mb-4">Pourquoi Choisir <span class="gradient-text">TechPro</span> ?</h2>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Garantie Premium</h5>
+                                <p>Tous nos produits sont couverts par une garantie étendue pour votre tranquillité d'esprit.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Livraison Rapide</h5>
+                                <p>Livraison express en 24-48h partout en France avec suivi en temps réel.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Support Technique</h5>
+                                <p>Notre équipe d'experts est disponible 7j/7 pour vous accompagner.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Qualité Certifiée</h5>
+                                <p>Produits authentiques de marques reconnues avec certification qualité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title text-white">Ce que disent nos <span class="text-warning">Clients</span></h2>
+                <p class="section-subtitle text-white-50">Plus de 10 000 clients nous font confiance</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="testimonial-content">
+                                            <i class="fas fa-quote-left fa-3x text-warning mb-4"></i>
+                                            <p class="testimonial-text">"Service exceptionnel ! J'ai acheté mon nouvel ordinateur portable ici et l'équipe m'a parfaitement conseillé. Livraison ultra-rapide et produit de qualité."</p>
+                                            <div class="testimonial-author">
+                                                <strong>Marie Dubois</strong>
+                                                <span class="text-warning"> - Architecte</span>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="testimonial-content">
+                                            <i class="fas fa-quote-left fa-3x text-warning mb-4"></i>
+                                            <p class="testimonial-text">"Équipe professionnelle et compétente. Mes achats d'équipements pour l'entreprise se passent toujours parfaitement. Relation de confiance établie depuis 3 ans."</p>
+                                            <div class="testimonial-author">
+                                                <strong>Jean-Pierre Martin</strong>
+                                                <span class="text-warning"> - Directeur IT</span>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="testimonial-content">
+                                            <i class="fas fa-quote-left fa-3x text-warning mb-4"></i>
+                                            <p class="testimonial-text">"Prix compétitifs et large choix de produits. Le site est facile à utiliser et le service après-vente est réactif. Je recommande vivement !"</p>
+                                            <div class="testimonial-author">
+                                                <strong>Sophie Laurent</strong>
+                                                <span class="text-warning"> - Freelance</span>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h3 class="text-white mb-3">Restez informé de nos dernières offres</h3>
+                    <p class="text-white-50 mb-4">Inscrivez-vous à notre newsletter et recevez en exclusivité nos promotions et nouveautés</p>
+                    <div class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Votre adresse e-mail">
+                            <button class="btn btn-warning btn-newsletter" type="button">
+                                <i class="fas fa-paper-plane me-2"></i>S'inscrire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-laptop-code me-2 text-warning"></i>
+                        <span class="gradient-text">TechPro Store</span>
+                    </h5>
+                    <p class="text-white-50 mb-3">
+                        Votre partenaire de confiance pour tous vos besoins en équipements informatiques. 
+                        Qualité, service et innovation depuis 2015.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h6 class="fw-bold mb-3 text-warning">Produits</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Ordinateurs</a></li>
+                        <li><a href="#" class="footer-link">Téléphones</a></li>
+                        <li><a href="#" class="footer-link">Accessoires</a></li>
+                        <li><a href="#" class="footer-link">Stockage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h6 class="fw-bold mb-3 text-warning">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Support Technique</a></li>
+                        <li><a href="#" class="footer-link">Garanties</a></li>
+                        <li><a href="#" class="footer-link">Livraison</a></li>
+                        <li><a href="#" class="footer-link">Retours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h6 class="fw-bold mb-3 text-warning">Contact</h6>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Avenue de la Technologie, 75001 Paris
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-2"></i>
+                            +33 1 23 45 67 89
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-2"></i>
+                            contact@techprostore.fr
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock me-2"></i>
+                            Lun-Sam: 9h-19h | Dim: 10h-18h
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-white-50">&copy; 2025 TechPro Store. Tous droits réservés.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa me-2"></i>
+                        <i class="fab fa-cc-mastercard me-2"></i>
+                        <i class="fab fa-cc-paypal me-2"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-shopping-cart me-2"></i>Mon Panier
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <div class="text-center text-muted py-4">
+                            <i class="fas fa-shopping-cart fa-3x mb-3 opacity-50"></i>
+                            <p>Votre panier est vide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <strong>Total: <span id="cartTotal">0 €</span></strong>
+                        </div>
+                        <button type="button" class="btn btn-warning w-100" id="checkoutBtn">
+                            <i class="fas fa-credit-card me-2"></i>Procéder au Paiement
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
